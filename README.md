@@ -2,7 +2,7 @@
 
 [![React](https://img.shields.io/badge/React-^19.1.0-blue?logo=react)](https://reactjs.org/) [![Flask](https://img.shields.io/badge/Flask-3.0.3-grey?logo=flask)](https://flask.palletsprojects.com/) [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
 
-Turn your text into a secret (well, not *really* secret) emoji code! This fun web application uses a simple substitution cipher to convert text characters into corresponding emojis and back again.
+Turn your text into a secret (well, not *really* secret) emoji code! This web application uses a simple substitution cipher to convert text characters into corresponding emojis and back again.
 
 **✨ Features:**
 
@@ -20,13 +20,13 @@ This application implements a **simple substitution cipher**. It is **NOT crypto
 ```
 emoji_cipher_app/
 ├── backend/         # Python Flask API
-│   ├── cipher_api.py  # Main Flask application, cipher logic, API endpoints (Renamed)
+│   ├── cipher_api.py  # Main Flask application, cipher logic, API endpoints
 │   └── requirements.txt # Backend Python dependencies
 ├── frontend/        # React User Interface
 │   ├── public/        # Static assets
 │   ├── src/           # React components and source code
-│   │   ├── EmojiCipherInterface.js # Main application component (Renamed)
-│   │   └── EmojiCipherInterface.css # Styling (Matrix theme) (Renamed)
+│   │   ├── EmojiCipherInterface.js # Main application component
+│   │   └── EmojiCipherInterface.css # Styling
 │   ├── package.json   # Frontend Node.js dependencies and scripts
 │   └── ...            # Other React project files
 └── README.md        # This file
@@ -77,7 +77,7 @@ You need to run both the backend and frontend servers simultaneously in separate
 python cipher_api.py
 ```
 
-The Flask backend server will typically start on `http://localhost:5000`. Keep this terminal running.
+The Flask backend server will start on `http://localhost:5000`. Keep this terminal running.
 
 ### 2. Run the Frontend Server
 
@@ -87,7 +87,7 @@ The Flask backend server will typically start on `http://localhost:5000`. Keep t
 npm start
 ```
 
-This command should automatically open the application in your default web browser, usually at `http://localhost:3000`.
+This command should automatically open the application in your default web browser at `http://localhost:3000`.
 
 Now you can use the Emoji Cipher app! 🎉
 
